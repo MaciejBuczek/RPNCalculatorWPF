@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RPNCalculator"
         mc:Ignorable="d" FontSize="50" 
-        Title="RPN Calculator" Height="auto" Width="auto" ResizeMode="NoResize">
+        Title="RPN Calculator" Height="auto" Width="auto" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
