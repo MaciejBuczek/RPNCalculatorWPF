@@ -4,9 +4,70 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RPNCalculator"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        mc:Ignorable="d" FontSize="50"
+        Title="RPN Calculator" Height="auto" Width="auto" ResizeMode="NoResize">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" FontSize="15" Text="Infix" HorizontalAlignment="Right"/>
+        <TextBox x:Name="EquationInfix" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="5" FontSize="15" Text="Postfix" HorizontalAlignment="Right"/>
+        <TextBox x:Name="EquationPostfix" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="5" IsEnabled="False"/>
+
+        <TextBlock Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="5" FontSize="15" Text="Result" HorizontalAlignment="Right"/>
+        <TextBox x:Name="Result" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="5" IsEnabled="False" Margin="0,0,0,15"/>
+
+        <Button Grid.Row="7" Grid.Column="1" Width="80" Margin="2" Padding="5" Content="("/>
+        <Button Grid.Row="7" Grid.Column="2" Width="80" Margin="2" Padding="5" Content=")"/>
+        <Button Grid.Row="7" Grid.Column="3" Width="80" Margin="2" Padding="5" Content="%"/>
+        <Button Grid.Row="7" Grid.Column="4" Width="80" Margin="2" Padding="5" Content="C"/>
+        <Button Grid.Row="7" Grid.Column="5" Width="80" Margin="2" Padding="5" Content="«"/>
+
+        <Button Grid.Row="8" Grid.Column="1" Width="80" Margin="2" Padding="5" Content="1"/>
+        <Button Grid.Row="8" Grid.Column="2" Width="80" Margin="2" Padding="5" Content="2"/>
+        <Button Grid.Row="8" Grid.Column="3" Width="80" Margin="2" Padding="5" Content="3"/>
+        <Button Grid.Row="8" Grid.Column="4" Width="80" Margin="2" Padding="5" Content="^"/>
+        <Button Grid.Row="8" Grid.Column="5" Width="80" Margin="2" Padding="5" Content="√"/>
+
+        <Button Grid.Row="9" Grid.Column="1" Width="80" Margin="2" Padding="5" Content="4"/>
+        <Button Grid.Row="9" Grid.Column="2" Width="80" Margin="2" Padding="5" Content="5"/>
+        <Button Grid.Row="9" Grid.Column="3" Width="80" Margin="2" Padding="5" Content="6"/>
+        <Button Grid.Row="9" Grid.Column="4" Width="80" Margin="2" Padding="5" Content="÷"/>
+        <Button Grid.Row="9" Grid.Column="5" Width="80" Margin="2" Padding="5" Content="*"/>
+
+        <Button Grid.Row="10" Grid.Column="1" Width="80" Margin="2" Padding="5" Content="7"/>
+        <Button Grid.Row="10" Grid.Column="2" Width="80" Margin="2" Padding="5" Content="8"/>
+        <Button Grid.Row="10" Grid.Column="3" Width="80" Margin="2" Padding="5" Content="9"/>
+        <Button Grid.Row="10" Grid.Column="4" Width="80" Margin="2" Padding="5" Content="+"/>
+        <Button Grid.Row="10" Grid.Column="5" Width="80" Margin="2" Padding="5" Content="-"/>
+
+        <Button Grid.Row="11" Grid.Column="1" Width="80" Margin="2" Padding="5" Content=","/>
+        <Button Grid.Row="11" Grid.Column="2" Width="80" Margin="2" Padding="5" Content="0"/>
+        <Button Grid.Row="11" Grid.Column="3" Width="auto" Margin="2" Padding="5" Grid.ColumnSpan="3" Content="="/>
 
     </Grid>
 </Window>
