@@ -7,6 +7,15 @@
         <Setter Property="Padding" Value="15"/>
     </Style>
 
+    <Style x:Key="ButtonNumber" TargetType="Button" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Background" Value="#FFF1F1F1"/>
+    </Style>
+    
+    <Style x:Key="ButtonPrimary" TargetType="Button" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Background" Value="#FF6D6D6D"/>
+        <Setter Property="Foreground" Value="WhiteSmoke"/>
+    </Style>
+
     <Style x:Key="EquationLabel" TargetType="TextBlock">
         <Setter Property="FontSize" Value="15"/>
         <Setter Property="HorizontalAlignment" Value="Right"/>
