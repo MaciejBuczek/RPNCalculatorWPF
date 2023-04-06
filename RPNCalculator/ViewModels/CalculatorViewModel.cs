@@ -10,7 +10,22 @@ namespace RPNCalculator.Presentation.ViewModels
 {
     public class CalculatorViewModel : INotifyPropertyChanged
     {
+        private string _infixEquation = string.Empty;
+
         public event PropertyChangedEventHandler? PropertyChanged;
+
+        public string InfixEquaiton
+        {
+            get
+            {
+                return _infixEquation;
+            }
+            set
+            {
+                _infixEquation = value;
+                OnPropertyChanged();
+            }
+        }
 
         private void OnPropertyChanged([CallerMemberName]string? propertyName = null)
         {

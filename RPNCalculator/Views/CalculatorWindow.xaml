@@ -40,7 +40,7 @@
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" Text="Infix" Style="{StaticResource EquationLabel}" />
-        <TextBox x:Name="EquationInfix" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5"/>
+        <TextBox x:Name="EquationInfix" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" Text="{Binding InfixEquaiton }" />
 
         <TextBlock Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="5" Text="Postfix" Style="{StaticResource EquationLabel}" />
         <TextBox x:Name="EquationPostfix" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="5" IsEnabled="False"/>
