@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RPNCalculator.Presentation.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,13 +17,14 @@ using System.Windows.Shapes;
 namespace RPNCalculator
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for CalculatorWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CalculatorWindow : Window
     {
-        public MainWindow()
+        public CalculatorWindow()
         {
             InitializeComponent();
+            DataContext = new CalculatorViewModel();
         }
     }
 }
